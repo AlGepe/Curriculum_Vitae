@@ -1,0 +1,262 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
+\usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
+\usepackage{float} 
+\usepackage{selinput}
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%\usepackage[spanish]{babel}
+%\selectlanguage{spanish}
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\pagestyle{fancy} % All pages have headers and footers
+\SelectInputMappings{%
+	aacute={á},
+	ntilde={ñ},
+	Euro={€}
+}
+
+%\renewcommand{\footnote}{\arabic{footnote}}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Álvaro}{Díez}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Macias Picavea 14 8ºD}{39003 Santander}{Spain}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+34 690 603 466}                   % optional, remove / comment the line if not wanted
+%			\phone[fixed]{+34~942~219~639}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{alvarodiezgp@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{youpp}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with multiply entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Pre - University Studies}
+\cventry{2008-2010}{Bachillerato Español}{Instituto Santa Clara}{Santander}{\textit{High School Studies}}{As IB was not officially recognised as valid studies in Spain at the time, the equivalent "Bachillerato" was also completed simultaneously}  % arguments 3 to 6 can be left empty
+\begin{itemize}
+	\item{Final grade: 8.1/10 Including selectividad\footnote{National university-entry exam} }
+		\newline
+\end{itemize}
+\cventry{2008-2010}{International Baccalaureate}{Instituto Santa Clara}{Santander}{\textit{High School Studies}}{Studied simultaneously with "Bachillerato" and completed in two years following High School's schedule}
+\begin{itemize}
+	\item Final grade: 31 pt
+		\begin{itemize} 
+			\item Including 6/7 in Physics
+		\end{itemize}
+\end{itemize}
+
+\section{University Studies}
+\cventry{2010-2017}{Degree in Physics}{Universidad de Cantabria}{Santander}{\textit{Final Grade}}{7.45/10}
+\textit{\textbf{Remarks:}}
+\begin{itemize}%
+	\item \textit{2012-2013} Erasmus in Bergen (Norway)
+		% \begin{itemize}%
+		% \item Subjects taken:
+		%   \begin{itemize}
+		%   \item Statistical Physics
+		%   \item ATMOS
+		%   \item Differential ecuations
+		%   \end{itemize}
+		% \end{itemize}
+	\item Bachelor's thesis: \newline{}
+		\cvitem{Title}{\emph{Fast simulation of transients in irradiated silicon detectors}}
+		\cvitem{Supervisor}{Marcos Fernández García (UC-CERN)}
+		%\cvitem{description}{Short thesis abstract}
+
+\end{itemize}
+
+
+\section{Experience}
+
+\subsection{Laboral} % (fold)
+\label{sub:laboral}
+\cventry{June-September (2015)}{Internship at CERN}{CERN, Geneva}{Worked as part of the PH-DD-SSD group at CERN }{In charge of the development a fast simulator for irradiated silicon detectors in C++}{Summer Student Program}{}
+
+\cventry{February-October (2015)}{Internship at CERN}{CERN, Geneva}{Worked as part of the EP-DT-FS-Gas group at CERN for gas control systems}{In charge of controlling gas mixtures inside selected gaseous) CERN-LHC detectors and providing technical assistance to researches in gas-related matters}{Technical Student Program}{}
+
+% subsection laboral (end)
+\subsection{Vocational}
+\cventry{2013-current}{Founder and member of the Physics Mentor Group}{Santander}{}{\newline The Physics Mentor Group is a group founder by students and aimed to help students in their first and second year at university}{}%
+
+The Physics Mentor Group also:%
+\begin{itemize}%
+	\item Helped promoting physics amongst high school students during doors open days
+	\item Took part in the European researcher's night in Santander (2014 \& 2015)
+	\item Took part in the first science fair in Cantabria [December 2015]
+	\item Organised the Gran Gymnkhana de Ciencias \newline (the first skill-based contest for students ever organised in the UC)
+	\item Co-organized the Gymnkhana de la Luz \newline (a skill-based contest for students of all ages for the International Year of Light)
+		% \begin{itemize}%
+		% \item Sub-achievement (a);
+		% \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+		%   \begin{itemize}
+		%   \item Sub-sub-achievement i;
+		%   \item Sub-sub-achievement ii;
+		%   \item Sub-sub-achievement iii;
+		%   \end{itemize}
+		% \item Sub-achievement (c);
+		% \end{itemize}
+		%\item Achievement 3.
+\end{itemize}
+\hspace{5pt}
+\newline{}
+\subsection{Sports}
+\cventry{2007--curent}{Handball Referee}{8 years of uninterrupted handball refereeing in a variety of categories\newline{}{}}{Refereed several National Championships(including one Final) and various international tournaments (under 22)}{}
+\textit{\textbf{Achievements:}}
+\begin{itemize}
+	\item Became national referee in 2010
+	\item Member of the Spanish Young referees Handball Project 2011-2012%\footnote{Project ended in 2012 after the new president of the Spanish Handball Federation was elected}
+	\item Designated referee for the international tournament "Granollers Cup" 2010 \& 2011
+	\item One year refereeing in Norway up to third level \textit{During the Erasmus}
+	\item Several nomitaions as referee for Spanish Championships up to under 18 y.o. level
+\end{itemize}
+\cventry{2009--2010}{Handball coach of a kids team}{}{}{}{}
+
+\subsection{Journalism}
+\cventry{2012--2013}{Android Blog Journalist}{El Androide Libre}{}{}{One year work as journalist for one of the top Spanish weblogs about Android{}}
+\cventry{2014--current}{Science Blog Journalist}{Medciencia}{}{}{Currently working as physics journalist for the Medciencia weblog}
+%General Achievements:
+%\begin{itemize}
+	%\item Three times featured in the main page of Meneame.com\footnote{Top site of news in Spain (community based)}
+%\end{itemize}
+\section{Languages}
+\cvitemwithcomment{English}{C1 Level}{Cambridge Certificate in Advance English obtained in May 2010}
+\cvitemwithcomment{French}{Basic Level}{Studied french at school 2004-2008 \& lived in France for a total of 11 months}
+
+\section{Computer skills}
+\cventry{Software Development}{C++, Java, gdb UML, Matlab, ROOT}{Intermediate Level}{Experience developing software (mainly physics simulators and physics oriented software) in the three aforementioned languages and UML diagrams.}{Experience using $gdb$ (with and without graphical front-ends such as $ddd$) debugger}{Knowledge of HTML, CSS, JavaScript, Python, bash scripting, FORTRAN and C-Cuda.}
+\cventry{Operative Systems}{Linux, Mac OSX, Windows}{Intermediate-Advanced Level}{Experience with Windows and UNIX/LINUX based OS including command line interface.}{}{Basic knowledge of AWK and SED}
+\cventry{Office Suites}{MSOffice, LibreOffice, \LaTeX}{Intermediate Level}{Experience using all suites for personal work and thourghout the studies}{}{}
+\cventry{Text Editors}{Vim, Sublime Text}{Intermediate Level}{Great experience using $vim$ and \textit{Sublime Text 3} as text editors for software development and text processing}{}{Basic knowledge of GNU-Emacs, Less, Nano and Nedit.}
+%\cvitem{category 3}{XXX, YYY, ZZZ}
+
+% \section{Interests}
+% \cvitem{hobby 1}{Description}
+% \cvitem{hobby 2}{Description}
+% %\cvitem{hobby 3}{Description}
+
+\section{References and Publications}
+\subsection{Academic} % (fold)
+\label{sub:}
+
+\cvlistitem{\href{https://github.com/AlGepe}{Personal GitHub} (https://github.com/AlGepe)}
+\cvlistitem{Publication at CERN \href{http://cds.cern.ch/record/2057142}{Developing a fast simulator for irradiated silicon detectors} (http://cds.cern.ch/record/2057142)}
+\cvlistitem{\href{https://indico.cern.ch/event/447412/}{Final talk on project at CERN:} \href{https://docs.google.com/presentation/d/1ItaYaDn644FlFxUDNH7XW6icOPsbcM7SAt67wIu7BC8/edit#slide=id.p}{TRACS radiation upgrade v2.0}(https://indico.cern.ch/event/447412)}
+\cvlistitem{Talk at Summer Student Sessions at CERN \href{http://cds.cern.ch/record/2042184}{Developing a fast simulator for irradiated silicon detectors}}
+\cvlistitem{Public Gas Monitoring web: \href{http://test-gasmonitoring.web.cern.ch/#}{Test Gas Monitoring}}
+\cvlistitem{}
+
+\subsection{Jornalism} % (fold)
+Articles featured in the main cover of \textit{Meneame}. \newline \hspace{4pt}
+\label{sub:jornalism}
+\cvlistitem{\href{http://www.elandroidelibre.com/2013/02/supercondensadores-de-grafeno-baterias-que-se-cargaran-en-30-minutos-y-duran-un-dia-entero.html}{Graphene Supercapacitors: batteries will charge in 30 seconds and last all day}}
+\cvlistitem{\href{www.medciencia.com/por-que-el-led-azul-merece-un-premio-nobel-en-fisica-y-el-led-verde-no/}{Why does blue LED deserve a Nobel Prize in Physics and green LED doesn't?}}
+\cvlistitem{\href{http://www.medciencia.com/la-curiosa-historia-del-monstruo-invisible-que-destrozaba-vagones-en-siberia}{The story of the "invisible monster" that wrecked trains in Siberia}}
+\cvlistitem{\href{http://www.medciencia.com/como-pensar-en-11-dimensiones-y-no-morir-en-el-intento/}{How to think in 11 dimesions and not die in the process}}
+% \cvlistitem{\href{}{Personal GitHub}}
+% \cvlistitem{\href{}{Publication at CERN}}
+% \cvlistitem{\href{}{Talk at Summer Student Sessions at CERN}}
+% \cvlistitem{\href{}{Final talk on project at CERN}}
+% subsection jornalism (end)
+
+% \subsection{Othjer} % (fold)
+% \label{sub:othjer}
+
+% subsection othjer (end)
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% \section{References}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% % Publications from a BibTeX file without multibib
+% %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+% %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
+
