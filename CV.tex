@@ -12,6 +12,7 @@
 \usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
 \usepackage{float} 
 \usepackage{selinput}
+\usepackage{scrextend}
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -44,7 +45,7 @@
 % personal data
 \name{Alvaro}{Diez}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-\address{Macias Picavea 14 8ºD}{39003 Santander}{Spain}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{Aleje Jerozolimskie 196A 2}{02-486 Warszawa}{Poland}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+34 690 603 466}                   % optional, remove / comment the line if not wanted
 %			\phone[fixed]{+34~942~219~639}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
@@ -75,7 +76,7 @@
 \section{Pre - University Studies}
 \cventry{2008-2010}{Bachillerato Español}{Instituto Santa Clara}{Santander}{\textit{High School Studies}}{}  % arguments 3 to 6 can be left empty
 \begin{itemize}
-	\item{Final grade: 8.1/10 Including selectividad\footnote{National university-entry exam} }
+	\item{Final grade: 8.1/10 Including selectividad\footnote{National university entry exam} }
 		\newline
 \end{itemize}
 \cventry{2008-2010}{International Baccalaureate}{Instituto Santa Clara}{Santander}{\textit{High School Studies}}{Studied simultaneously with "Bachillerato" and completed in two years following High School's schedule}
@@ -97,6 +98,7 @@
 	\item Bachelor's thesis: \newline{}
 		\cvitem{Title}{\emph{Fast simulation of transients in irradiated silicon detectors}}
 		\cvitem{Supervisor}{Marcos Fernández García (UC-CERN)}
+		% \cvitem{Published Paper}{}
 
 \end{itemize}
 
@@ -109,16 +111,14 @@
 
 \subsection{Laboral} % (fold)
 \label{sub:laboral}
-\cventry{June-September (2015)}{Internship at CERN}{CERN, Geneva}{Member of the PH-DD-SSD group at CERN }{Main developer of \href{https://github.com/IFCA-HEP/TRACS}{TRACS}, a fast simulator for irradiated silicon detectors in C++}{Summer Student Program}{}
+\cventry{June-September (2015)}{Internship at CERN}{CERN, Geneva}{Member of the PH-DD-SSD group}{\newline Main developer of \href{https://github.com/IFCA-HEP/TRACS}{TRACS}, a fast simulator for irradiated silicon detectors in C++}{Summer Student Program}{}
 
-\cventry{February-October (2015)}{Internship at CERN}{CERN, Geneva}{Member of the EP-DT-FS-Gas group at CERN for gas control systems}{In charge of controlling gas mixtures inside selected gaseous CERN-LHC detectors and providing technical assistance to researchers in gas-related matters}{Technical Student Program}{}
+\cventry{February-October (2016)}{Internship at CERN}{CERN, Geneva}{Member of the EP-DT-FS-Gas group}{\newline Controlling gas mixtures inside selected gaseous detectors from the LHC and providing technical assistance to researchers in gas-related matters}{Technical Student Program}{}
 
 % subsection laboral (end)
 \newpage
 \subsection{Vocational}
-\cventry{2013-2017}{Founder and member of the Physics Mentor Group}{Santander}{}{\newline The Physics Mentor Group is a group founder by students and aimed to help students in their first and second year at university}{The group has collaborated with IFCA and UC in events like "Researcher's nite" and also organized their own.}%
-
-%The Physics Mentor Group also:%
+\cventry{2013-2017}{Founder and member of the Physics Mentor Group}{Santander}{}{\newline Group founded by 4 students to help new university students and publicise science}{}%The Physics Mentor Group also:%
 %\begin{itemize}%
 	%\item Helped promoting physics amongst high school students during doors open days
 	%\item Took part in the European researcher's night in Santander (2014 \& 2015)
@@ -139,8 +139,18 @@
 %\end{itemize}
 % \hspace{5pt}
 % \newline{}
+\subsection{Journalism}
+\cventry{2012--2016}{Blog Journalist}{}{}{}{}
+\vspace{-15pt}
+	\begin{addmargin}[6.5em]{0em}% 1em left, 2em right
+	\item[] - \underline{\textit{El Androide Libre}} One year as journalist for one of the most visisted Android weblogs in Spanish
+	\item - \underline{\textit{Medciencia}} Two years as science journalist for Medciencia
+	\end{itemize}
+\end{addmargin}% 1em left, 2em right
+{}{}
+
 \subsection{Sports}
-\cventry{2007--2017}{Handball Referee}{8 years of handball refereeing\newline{}}{Highest Category: National Referee (2011-2014)\newline{}}{Refereed several National Championships and two Granoller's Cups \newline{\indent{(International Tournament)}}}{}
+\cventry{2007--2017}{Handball Referee}{8 years of handball refereeing}{\newline Highest Category: National Referee (2011-2014)}{\newline Refereed several National and International Championships u-18}{}
 %\textit{\textbf{Achievements:}}
 %\begin{itemize}
 	%\item Became national referee in 2010
@@ -151,9 +161,7 @@
 %\end{itemize}
 \cventry{2009--2010}{Handball coach of a kids team}{}{}{}{}
 
-\subsection{Journalism}
-\cventry{2012--2013}{Android Blog Journalist}{El Androide Libre}{}{}{One year work as journalist for one of the top Spanish weblogs about Android{}}
-\cventry{2014--2016}{Science Blog Journalist}{Medciencia}{}{}{Currently working as physics journalist for the Medciencia weblog}
+% \cventry{2014--2016}{Science Blog Journalist}{Medciencia}{}{}{Currently working as physics journalist for the Medciencia weblog}
 %General Achievements:
 %\begin{itemize}
 	%\item Three times featured in the main page of Meneame.com\footnote{Top site of news in Spain (community based)}
@@ -163,12 +171,42 @@
 \cvitemwithcomment{French}{Basic Level}{Studied french at school 2004-2008 \& lived in France for 11 months}
 
 \section{Computer skills}
-\cventry{Software Development}{C++/C, Java, gdb, UML, Matlab, ROOT}{Intermediate Level}{Experience developing software (mainly physics simulators and physics oriented software) in the three aforementioned languages and UML diagrams.}{Experience using $gdb$ ( and $ddd$) debugger}{Basic knowledge of HTML, CSS, JavaScript, Python, bash scripting, FORTRAN, AWK, SED, and Cuda.}
-\cventry{Operative Systems}{Linux, Mac OSX, Windows}{Intermediate-Advanced Level}{\newline{}Fluent usage of command line interface}{}{}
+\cventry{Software Development}{}{}{}{}{}%C++/C, Java, gdb, UML, Matlab, ROOT}{Basic-Intermediate Level}{Experience developing software (mainly physics simulators and physics oriented software) in the three aforementioned languages and UML diagrams.}{Experience using $gdb$ ( and $ddd$) debugger}{Basic knowledge of HTML, CSS, JavaScript, Python, bash scripting, FORTRAN, AWK, SED, and Cuda.}
+\vspace{-35pt}
+	\begin{addmargin}[6.5em]{0em}% 1em left, 2em right
+		\item[] \textbf{C/C++, Python, git}
+		\item  Intermediate knowledge with experience in data analysis
+		\item[] \textbf{Java, gdb/ddd, bash, Matlab, UML, ROOT, Cuda, MPI, OpenMP}
+		\item  Basic knowledge with experience
+	\end{itemize}
+\end{addmargin}% 1em left, 2em right
 
-\cventry{Office Suites}{MSOffice, LibreOffice, \LaTeX}{Intermediate Level}{Experience using all suites for personal work and throughout the studies}{}{}
+\vspace{10pt}
+\cventry{Operative Systems}{}{}{}{}{}%C++/C, Java, gdb, UML, Matlab, ROOT}{Basic-Intermediate Level}{Experience developing software (mainly physics simulators and physics oriented software) in the three aforementioned languages and UML diagrams.}{Experience using $gdb$ ( and $ddd$) debugger}{Basic knowledge of HTML, CSS, JavaScript, Python, bash scripting, FORTRAN, AWK, SED, and Cuda.}
+\vspace{-35pt}
+	\begin{addmargin}[6.5em]{0em}% 1em left, 2em right
+		\item[] \textbf{Linux, OSX, Windows}
+		\item  Intermediate/Advance and fluent usage of command line interface as well as remote work (e.g.: ssh, sshfs...)
+	\end{itemize}
+\end{addmargin}% 1em left, 2em right
 
-\cventry{Text Editors}{Vim, Sublime Text}{Intermediate Level}{Great experience using $vim$ and \textit{Sublime Text 3} as text editors for software development and text processing}{}{Basic knowledge of GNU-Emacs, Less, Nano...}
+\vspace{10pt}
+\cventry{Office Suites}{}{}{}{}{}
+\vspace{-30pt}
+	\begin{addmargin}[6.5em]{0em}% 1em left, 2em right
+		\item[] \textbf{MSOffice, LibreOffice, \LaTeX}
+		\item  Intermediate/Advance and fluent usage of command line interface as well as remote work (e.g.: ssh, sshfs...)
+	\end{itemize}
+\end{addmargin}% 1em left, 2em right
+
+\vspace{10pt}
+\cventry{Text Editors}{}{}{}{}{}
+\vspace{-30pt}
+	\begin{addmargin}[6.5em]{0em}% 1em left, 2em right
+		\item[] \textbf{Vim}
+		\item  Intermediate/Advance with extended experience as main editor including IDE-like plugins
+	\end{itemize}
+\end{addmargin}% 1em left, 2em right
 %\cvitem{category 3}{XXX, YYY, ZZZ}
 
 \section{Additional Information}
@@ -177,7 +215,7 @@
 % %\cvitem{hobby 3}{Description}
 
 \newpage
-\center{\huge Appendix with links to relevant information}
+\center{\huge Links to relevant information}
 \vspace{2cm}
 \section{References and Publications}
 \subsection{Academic} % (fold)
@@ -197,13 +235,17 @@
 %\cvlistitem{}
 
 \subsection{Journalism (Hyperlinked)} % (fold)
-{\center Articles featured in the main cover of \textit{Meneame}. \newline \hspace{4pt}}
+{\underline{ Most succesful articles. \newline \hspace{4pt}}
 \label{sub:journalism}
 \cvlistitem{\href{http://www.elandroidelibre.com/2013/02/supercondensadores-de-grafeno-baterias-que-se-cargaran-en-30-minutos-y-duran-un-dia-entero.html}{Graphene Supercapacitors: batteries will charge in 30 seconds and last all day}}
 \cvlistitem{\href{www.medciencia.com/por-que-el-led-azul-merece-un-premio-nobel-en-fisica-y-el-led-verde-no/}{Why does blue LED deserve a Nobel Prize in Physics and green LED doesn't?}}
 \cvlistitem{\href{http://www.medciencia.com/la-curiosa-historia-del-monstruo-invisible-que-destrozaba-vagones-en-siberia}{The story of the "invisible monster" that wrecked trains in Siberia}}
 \cvlistitem{\href{http://www.medciencia.com/como-pensar-en-11-dimensiones-y-no-morir-en-el-intento/}{How to think in 11 dimensions and not die in the process}}
 %\end{vplace}
+
+
+\vspace{8cm}
+\footnotesize{I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the Personal Data Protection Act as of 29 August 1997, consolidated text: Journal of Laws 2016, item 922 as amended.}
 
 \clearpage
 \end{document}
